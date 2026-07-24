@@ -1,6 +1,6 @@
 # 🏠 BC Housing Market Analytics Dashboard
 
-An end-to-end Business Intelligence project analyzing more than 30 years of British Columbia housing market data using SQL and Power BI.
+An end-to-end Business Intelligence project that transforms more than 30 years of British Columbia housing market data into interactive dashboards and actionable business insights using SQL, Power BI, DAX, and Power Query.
 
 This project demonstrates the complete analytics lifecycle—from data exploration and transformation to data modeling, KPI development, interactive dashboards, and business insights that support evidence-based decision-making.
 
@@ -65,16 +65,45 @@ Using Power Query, the data was prepared through:
 - Established relationships between tables.
 - Optimized the model for analytical reporting.
 
-### 4️⃣ KPI Development
+### 4️⃣ DAX Measures & KPI Development
 
-Developed business-focused KPIs using DAX, including measures for:
+Developed a comprehensive set of DAX measures and analytical metrics to support executive reporting, housing supply analysis, affordability assessment, regional comparison, and long-term trend evaluation.
 
-- Housing Supply
-- Housing Starts
-- Affordability
-- Market Growth
-- Regional Performance
-- Trend Analysis
+The measures covered several analytical areas:
+
+#### Housing Supply & Composition
+- Total Housing Starts
+- Condo Starts
+- Homeowner Starts
+- Rental Starts
+- Housing Type Share (%)
+- Selected Starts Share (%)
+- Condo-to-Rental Ratio
+
+#### Affordability & Market Conditions
+- Average Housing Price
+- Average Vacancy Rate (%)
+- Rent-to-Income Ratio
+- Price-to-Income Ratio
+- Average Price per Housing Start
+- Rental Starts per Vacancy Point
+
+#### Time Intelligence & Trend Analysis
+- Previous-Year Housing Starts
+- Year-over-Year Change in Housing Starts (%)
+- Previous-Year Vacancy Rate
+- Year-over-Year Vacancy Rate Change (%)
+- Three-Year Rolling Average
+- Current-Year and Historical Trend Measures
+
+#### Regional & Interactive Analysis
+- Regional Housing Starts
+- Urban vs. Rural Housing Share
+- Dynamic Measures by Year, Region, and Housing Type
+- Filter-responsive KPI calculations
+- Benchmark and reference-line measures
+
+The DAX logic applied filter context, time-intelligence functions, relationship management, conditional calculations, and dynamic aggregation to support interactive analysis across years, regions, and housing categories.
 
 ### 5️⃣ Dashboard Development
 
