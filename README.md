@@ -9,6 +9,15 @@ This project demonstrates the complete analytics lifecycle—from data explorati
 > The original dataset is not included in this repository due to data sharing and licensing considerations.
 >
 > This repository focuses on the complete Business Intelligence workflow, dashboard development, analytical methodology, and business insights rather than the underlying data.
+---
+
+## 📊 Dashboard Overview
+
+<p align="center">
+  <img src="./images/dashboard-overview.png" alt="BC Housing Market Analytics - Power BI Dashboard Overview" width="100%">
+</p>
+
+**Executive Summary** · **Regional Analysis** · **Trend Analysis**
 
 ---
 
@@ -148,7 +157,9 @@ Provides a high-level overview of housing market performance through executive K
 
 ### Cluster Analysis
 
-![Cluster Analysis](dashboard/cluster-analysis.png)
+<p align="center">
+  <img src="./images/cluster-analysis.png" alt="BC Housing Market Cluster Analysis Dashboard" width="100%">
+</p>
 
 
 Compares regional housing markets using cluster-based analysis to identify similarities and market patterns.
@@ -156,8 +167,9 @@ Compares regional housing markets using cluster-based analysis to identify simil
 
 ### Trend Analysis
 
-![Trend Analysis](dashboard/trend-analysis.png)
-
+<p align="center">
+  <img src="./images/trend-analysis.png" alt="BC Housing Market Trend Analysis Dashboard" width="100%">
+</p>
 Visualizes long-term housing trends, supporting the analysis of market growth, affordability, and housing supply over time.
 
 
