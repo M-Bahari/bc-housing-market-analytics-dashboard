@@ -138,7 +138,9 @@ The final dashboards transform historical housing data into actionable insights 
 
 ### Executive Summary
 
-![Executive Dashboard](dashboard/executive-summary.png)
+<p align="center">
+  <img src="./images/executive-summary.png" alt="BC Housing Market Executive Summary Dashboard" width="100%">
+</p>
 
 
 Provides a high-level overview of housing market performance through executive KPIs and interactive visualizations.
