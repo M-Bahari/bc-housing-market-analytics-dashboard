@@ -1,214 +1,267 @@
 # 🏠 BC Housing Market Analytics Dashboard
 
-An end-to-end Business Intelligence project that transforms more than 30 years of British Columbia housing market data into interactive dashboards and actionable business insights using SQL, Power BI, DAX, and Power Query.
+**Power BI · SQL · DAX · Power Query · Data Modeling · Business Intelligence**
 
-This project demonstrates the complete analytics lifecycle—from data exploration and transformation to data modeling, KPI development, interactive dashboards, and business insights that support evidence-based decision-making.
+An end-to-end Business Intelligence project analyzing **30+ years of British Columbia housing market data** to uncover trends in housing supply, affordability, regional development, and market conditions.
 
-> **Note**
->
-> The original dataset is not included in this repository due to data sharing and licensing considerations.
->
-> This repository focuses on the complete Business Intelligence workflow, dashboard development, analytical methodology, and business insights rather than the underlying data.
+The project transforms complex historical housing data into interactive Power BI dashboards, executive KPIs, and actionable insights designed to support evidence-based planning and decision-making.
+
+> **Data Note:** The original dataset is not included in this repository due to data-sharing and licensing considerations. This repository focuses on the analytical workflow, dashboard development, methodology, and business insights.
+
 ---
 
 ## 📊 Dashboard Overview
 
 <p align="center">
-  <img src="./images/dashboard-overview.png" alt="BC Housing Market Analytics - Power BI Dashboard Overview" width="100%">
+  <img src="./images/dashboard-overview.png" alt="BC Housing Market Analytics Power BI Dashboard Overview" width="100%">
 </p>
 
-**Executive Summary** · **Cluster Analysis** · **Trend Analysis**
+<p align="center">
+  <b>Executive Summary · Cluster Analysis · Trend Analysis</b>
+</p>
 
 ---
 
 ## 📖 Project Overview
 
-British Columbia's housing market has experienced significant changes over the past three decades, driven by population growth, regional development, housing supply, affordability challenges, and changing market conditions.
+British Columbia's housing market has experienced substantial changes over the past three decades as population growth, housing demand, regional development, and affordability pressures have reshaped market conditions.
 
-This project was developed to transform historical housing data into an interactive Business Intelligence solution that enables stakeholders to explore market trends, monitor key performance indicators (KPIs), compare regional housing conditions, and support data-driven decision-making.
+This project analyzes historical housing activity from **1990–2024**, together with current regional market conditions, through three interconnected Power BI dashboards.
 
-Using SQL and Power BI, the project covers the complete analytics workflow—from data exploration, validation, and transformation to dimensional data modeling, KPI development, dashboard design, and business insight generation.
+The analysis focuses on three core areas:
+
+* **Executive Performance** — How has BC's housing market evolved over time?
+* **Regional Distribution** — Where is housing development concentrated, and how do regional markets differ?
+* **Market Trends** — How are housing supply, prices, affordability, and vacancy conditions changing?
 
 ---
 
-## 🎯 Business Objectives
+## 🎯 Business Questions
 
-The primary objective of this project was to build an end-to-end Business Intelligence solution that enables users to explore historical housing market trends across British Columbia and support evidence-based decision-making.
+The analysis was designed to answer practical housing-market questions:
 
-Specifically, the project aimed to:
-
-- Analyze more than 30 years of historical housing market data.
-- Evaluate regional differences in housing supply, affordability, and market activity.
-- Monitor key housing indicators through interactive KPI dashboards.
-- Identify long-term trends and emerging patterns across multiple housing categories.
-- Provide executive-level reporting through interactive data visualizations.
-- Transform complex housing data into actionable business insights for planning and policy evaluation.
+* Has new housing supply kept pace with population growth?
+* How have housing prices and affordability changed over time?
+* Which housing types contribute the most to new construction?
+* Which regions account for the largest share of housing development?
+* How do urban and rural housing markets differ?
+* How have housing starts changed year over year?
+* Is recent construction activity above or below the longer-term market trend?
+* How do housing starts relate to changes in vacancy conditions?
 
 ---
 
 ## 🛠 Analytics Workflow
 
-The project follows a complete end-to-end Business Intelligence workflow, transforming raw housing data into interactive dashboards and actionable business insights.
+### 1️⃣ Data Exploration & Validation
 
-### 1️⃣ Data Exploration
+* Explored historical British Columbia housing datasets.
+* Assessed data structure, completeness, and analytical suitability.
+* Identified business questions, dimensions, and required KPIs.
 
-- Explored historical British Columbia housing datasets.
-- Reviewed data structure, data quality, and available attributes.
-- Identified analytical requirements and business questions.
+### 2️⃣ Data Preparation & ETL
 
-### 2️⃣ Data Preparation & Transformation
+Used **Power Query** to prepare the analytical dataset through:
 
-Using Power Query, the data was prepared through:
-
-- Data cleaning and validation
-- Data type standardization
-- Filtering unnecessary records
-- Merge and Append operations
-- Grouping and aggregations
-- Creation of calculated columns
-- Data transformation and restructuring
+* Data cleaning and validation
+* Data type standardization
+* Filtering and restructuring
+* Merge and Append operations
+* Grouping and aggregation
+* Calculated columns
+* Transformation of raw data into analysis-ready tables
 
 ### 3️⃣ Data Modeling
 
-- Designed a dimensional data model.
-- Established relationships between tables.
-- Optimized the model for analytical reporting.
+* Designed a dimensional analytical model.
+* Established relationships between fact and dimension tables.
+* Applied Star Schema principles where appropriate.
+* Optimized relationships and filter behavior for interactive reporting.
 
-### 4️⃣ DAX Measures & KPI Development
+### 4️⃣ DAX & KPI Development
 
-Developed a comprehensive set of DAX measures and analytical metrics to support executive reporting, housing supply analysis, affordability assessment, regional comparison, and long-term trend evaluation.
+Developed analytical measures across four major areas:
 
-The measures covered several analytical areas:
+**Housing Supply & Composition**
 
-#### Housing Supply & Composition
-- Total Housing Starts
-- Condo Starts
-- Homeowner Starts
-- Rental Starts
-- Housing Type Share (%)
-- Selected Starts Share (%)
-- Condo-to-Rental Ratio
+* Total Housing Starts
+* Condo Starts
+* Homeowner Starts
+* Rental Starts
+* Housing Type Share (%)
+* Condo-to-Rental Ratio
 
-#### Affordability & Market Conditions
-- Average Housing Price
-- Average Vacancy Rate (%)
-- Rent-to-Income Ratio
-- Price-to-Income Ratio
-- Average Price per Housing Start
-- Rental Starts per Vacancy Point
+**Affordability & Market Conditions**
 
-#### Time Intelligence & Trend Analysis
-- Previous-Year Housing Starts
-- Year-over-Year Change in Housing Starts (%)
-- Previous-Year Vacancy Rate
-- Year-over-Year Vacancy Rate Change (%)
-- Three-Year Rolling Average
-- Current-Year and Historical Trend Measures
+* Average Housing Price
+* Average Vacancy Rate
+* Rent-to-Income Ratio
+* Price-to-Income Ratio
+* Average Price per Housing Start
 
-#### Regional & Interactive Analysis
-- Regional Housing Starts
-- Urban vs. Rural Housing Share
-- Dynamic Measures by Year, Region, and Housing Type
-- Filter-responsive KPI calculations
-- Benchmark and reference-line measures
+**Time Intelligence**
 
-The DAX logic applied filter context, time-intelligence functions, relationship management, conditional calculations, and dynamic aggregation to support interactive analysis across years, regions, and housing categories.
+* Previous-Year Housing Starts
+* Housing Starts YoY Change (%)
+* Previous-Year Vacancy Rate
+* Vacancy Rate YoY Change (%)
+* Three-Year Rolling Average
+
+**Regional Analysis**
+
+* Regional Housing Starts
+* Urban vs. Rural Housing Share
+* Dynamic Year and Region Measures
+* Filter-responsive KPIs
+* Benchmark and reference measures
 
 ### 5️⃣ Dashboard Development
 
-Designed interactive Power BI dashboards including:
+Designed three interactive Power BI dashboards:
 
-- Executive Summary
-- Cluster Analysis
-- Trend Analysis
+* **Executive Summary** — province-wide KPIs, historical performance, affordability, and current regional activity
+* **Cluster Analysis** — regional housing supply, pricing, development mix, and urban/rural distribution
+* **Trend Analysis** — year-over-year performance, rolling trends, housing prices, supply composition, and vacancy conditions
 
-### 6️⃣ Business Insights
+### 6️⃣ Business Insight Generation
 
-The final dashboards transform historical housing data into actionable insights that support evidence-based planning, regional comparison, and long-term housing market analysis.
+Translated dashboard results into business findings and planning implications rather than treating visualization as the final analytical output.
 
 ---
 
 ## ⚙️ Technology Stack
 
-| Category | Technologies |
-|----------|--------------|
-| Business Intelligence | Power BI |
-| Data Querying | SQL |
-| Data Transformation | Power Query |
-| Data Modeling | Star Schema, Relationship Modeling |
-| Data Analysis | DAX, KPI Development |
-| Data Visualization | Interactive Dashboards, Executive Reporting |
-| Data Preparation | Data Cleaning, Validation, Merge, Append, Group By, Filtering |
-
+| Category              | Technologies                                               |
+| --------------------- | ---------------------------------------------------------- |
+| Business Intelligence | Power BI                                                   |
+| Data Querying         | SQL                                                        |
+| ETL & Transformation  | Power Query                                                |
+| Data Modeling         | Star Schema, Relationship Modeling                         |
+| Analytics             | DAX, KPI Development, Time Intelligence                    |
+| Visualization         | Interactive Dashboards, Executive Reporting                |
+| Analysis              | Trend Analysis, Regional Comparison, Business Storytelling |
 
 ---
 
-## 📊 Dashboard Preview
+# 📊 Dashboard Details
 
-### Executive Summary
+## 1️⃣ Executive Summary
 
 <p align="center">
   <img src="./images/executive-summary.png" alt="BC Housing Market Executive Summary Dashboard" width="100%">
 </p>
 
+Provides an executive-level view of historical housing performance, affordability, housing composition, and current regional construction activity across British Columbia.
 
-Provides a high-level overview of housing market performance through executive KPIs and interactive visualizations.
+### Key Questions
+
+* How has BC's housing supply evolved since 1990?
+* Has construction kept pace with population growth?
+* How have affordability and vacancy conditions changed?
+* Which housing types dominate new construction?
+* Which regions currently contribute the most housing supply?
+
 ---
 
-### Cluster Analysis
+## 2️⃣ Cluster Analysis
 
 <p align="center">
   <img src="./images/cluster-analysis.png" alt="BC Housing Market Cluster Analysis Dashboard" width="100%">
 </p>
 
+Compares housing supply, pricing, rental conditions, housing mix, and development concentration across British Columbia's regional markets.
 
-Compares regional housing markets using cluster-based analysis to identify similarities and market patterns.
+### Key Questions
+
+* Where is new housing construction concentrated?
+* How does housing composition differ across regions?
+* Which markets experience the highest prices?
+* How different are urban and rural development patterns?
+
 ---
 
-### Trend Analysis
+## 3️⃣ Trend Analysis
 
 <p align="center">
   <img src="./images/trend-analysis.png" alt="BC Housing Market Trend Analysis Dashboard" width="100%">
 </p>
 
+Examines recent housing-market dynamics through year-over-year performance, rolling averages, housing prices, supply composition, and vacancy trends.
 
-Visualizes long-term housing trends, supporting the analysis of market growth, affordability, and housing supply over time.
+### Key Questions
+
+* Is housing construction increasing or slowing?
+* Is current supply above or below the recent market trend?
+* How are prices changing across housing types?
+* How is the housing mix evolving?
+* Do changes in construction correspond with changes in vacancy rates?
+
 ---
 
 # 💡 Key Business Insights
 
-The dashboards provide decision-makers with interactive insights into long-term housing market performance across British Columbia.
+### 🏗️ 1. Housing supply expanded substantially, but affordability remains under pressure
 
-Key findings include:
+More than **1.05 million housing units** were started between 1990 and 2024. Despite this substantial expansion in supply, the **Price-to-Income Ratio reached 6.75**, indicating continued affordability pressure.
 
-- Regional differences in housing supply and market activity.
-- Long-term housing affordability trends.
-- Changes in housing starts across different housing categories.
-- Regional performance comparisons through cluster analysis.
-- Historical market trends supporting evidence-based planning.
+### 🏢 2. Condominiums dominate new housing construction
+
+Approximately **520K condominium units** were started during the analysis period, compared with approximately **345K homeowner units** and **181K rental units**.
+
+Condominiums therefore represent nearly half of total housing starts and have been the primary contributor to new housing supply.
+
+### 🏙️ 3. Housing development is heavily concentrated in urban markets
+
+Approximately **91% of housing starts** occur in urban regions.
+
+Vancouver represents the largest concentration of new construction activity, while Victoria and Kelowna form a second tier of regional development.
+
+### 📍 4. Housing conditions vary significantly by region
+
+Major urban centres generally combine higher construction activity with higher housing and rental prices, while many smaller communities experience substantially lower levels of new development.
+
+This suggests that province-wide averages alone may hide important regional housing pressures.
+
+### 📈 5. Recent construction remains relatively strong despite annual fluctuations
+
+Between 2016 and 2024, housing starts generally followed an upward trajectory.
+
+Although construction declined in 2024 compared with the previous year, activity remained relatively high when evaluated against the **three-year rolling average** and recent historical performance.
+
+### 🏘️ 6. More construction does not immediately translate into higher vacancy
+
+Vacancy rates fluctuate independently of short-term changes in housing starts.
+
+This suggests that housing availability is also influenced by factors such as population growth, migration, housing demand, and the time required for newly started projects to reach completion.
 
 ---
 
-# 🏆 Skills Demonstrated
+## 🎯 Business Takeaway
 
-- Business Intelligence
-- Power BI Dashboard Development
-- SQL Data Analysis
-- Power Query (ETL)
-- Data Cleaning & Transformation
-- Data Modeling (Star Schema)
-- DAX Measures & KPI Development
-- Executive Reporting
-- Data Visualization
-- Business Analysis
-- Data Storytelling
+The analysis suggests that **increasing housing supply alone may not be sufficient to address British Columbia's housing challenges**.
+
+Effective housing planning requires evaluating supply alongside:
+
+* Affordability
+* Population growth
+* Regional demand
+* Housing-type composition
+* Rental-market conditions
+* Vacancy rates
+
+A balanced strategy should continue supporting construction in high-demand urban markets while also encouraging appropriate housing development in emerging regional centres.
+
+---
+
+## 🏆 Skills Demonstrated
+
+`Power BI` · `SQL` · `DAX` · `Power Query` · `ETL` · `Data Modeling` · `Star Schema` · `KPI Development` · `Time Intelligence` · `Dashboard Design` · `Business Intelligence` · `Data Visualization` · `Business Analysis` · `Data Storytelling`
 
 ---
 
 ## 📬 Contact
 
-If you'd like to discuss this project or connect, feel free to reach out:
+Interested in discussing this project or data analytics opportunities?
 
-- **LinkedIn:** https://www.linkedin.com/in/m-bahari
-- **Email:** mism.bahari@gmail.com
-
+* **LinkedIn:** https://www.linkedin.com/in/m-bahari
+* **Email:** [mism.bahari@gmail.com](mailto:mism.bahari@gmail.com)
